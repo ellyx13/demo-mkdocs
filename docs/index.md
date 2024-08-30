@@ -1,7 +1,7 @@
 # Welcome to MkDocs with Docker
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-Test CICD
+Test CICD. Hello world
 
 ## Commands
 
