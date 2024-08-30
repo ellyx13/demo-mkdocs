@@ -39,6 +39,6 @@ jobs:
             cd ${{vars.PROJECT_PATH}}
             echo ${{ github.event.repository.name }}
             sudo docker pull ${{vars.DOCKER_NAME_IMAGE}}
-            sudo docker stop ${{vars.DOCKER_NAME_IMAGE}} || true
-            sudo docker rm ${{vars.DOCKER_NAME_IMAGE}} || true
+            sudo docker stop ${{ github.event.repository.name }} || true
+            sudo docker rm ${{ github.event.repository.name }} || true
             sudo docker run -d -p 8010:8000 --name ${{ github.event.repository.name }} ${{vars.DOCKER_NAME_IMAGE}}
